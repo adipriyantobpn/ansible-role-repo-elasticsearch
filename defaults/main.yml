@@ -1,2 +1,6 @@
 ---
 # defaults file for adipriyantobpn.repo-elasticsearch
+
+repo_location:              international   # available options: international, vagrant
+vagrant_repo_base_dir:      "file:///vagrantshare/repo/"
+elasticsearch_enabled:      yes

@@ -1,0 +1,10 @@
+---
+# yum variables can be checked using this command:
+#   $ python -c 'import yum, pprint; yb = yum.YumBase(); pprint.pprint(yb.conf.yumvar, width=1)'
+
+elasticsearch_gpgkey_url:        "https://artifacts.elastic.co/GPG-KEY-elasticsearch"
+elasticsearch_repo:
+  "elasticsearch-5.x":
+    file: "elasticsearch-5.x"
+    enabled: "{{ elasticsearch_enabled }}"
+    baseurl: "https://artifacts.elastic.co/packages/5.x/yum"
